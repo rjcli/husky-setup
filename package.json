@@ -9,13 +9,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "husky:setup": "npx husky init",
     "lint": "eslint .",
-    "prettier": "prettier --check \"**/*.{js,jsx,json,html,css,ts,tsx,yml,yaml}\"",
-    "prettier:write": "prettier --write \"**/*.{js,jsx,json,html,css,ts,tsx,yml,yaml}\" --ignore-unknown",
+    "prettier": "prettier --check \"**/*.{js,jsx,json,html,css,ts,tsx,yml,yaml,md}\"",
+    "prettier:write": "prettier --write \"**/*.{js,jsx,json,html,css,ts,tsx,yml,yaml,md}\" --ignore-unknown",
     "prepare": "husky"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx,html,css,json}": [
+    "**/*.{js,jsx,ts,tsx,html,css,json,md}": [
       "npm run prettier:write"
     ]
   },
